@@ -1,17 +1,21 @@
-class Circle extends Shape {
+import Figure from './Figure.js';
+
+export default class Circle extends Figure {
     constructor(radius) {
     super(radius)
     }
 
     get circumference(){
-        return (2 * this._radius) * π
+        return (2 * this.radius) * π;
         }
 
     get diameter(){
-    return this._radius * 2
+    return this.radius * 2;
     }
 
     get area() {
-    return π * this._radius^2
+    return π * this.radius^2;
     }
     }
+
+    
